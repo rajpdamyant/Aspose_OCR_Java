@@ -36,7 +36,7 @@ public class PerformOCROnImage
                 resourcesFilePath, xmlEtalonFileName, fontCollectionFileName);
         ocr.getConfig().setNeedRotationCorrection(false);
 
-        // Set image file
+        // Set image file.
         File image = new File(imagePath);
         ocr.setImage(image);
 
