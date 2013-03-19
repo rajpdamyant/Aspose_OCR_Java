@@ -40,7 +40,7 @@ public class PerformOCROnImage
         File image = new File(imagePath);
         ocr.setImage(image);
 
-        // Add language
+        // Add language.
         ILanguage language = Language.load("english");
         ocr.getLanguages().addLanguage(language);
 
