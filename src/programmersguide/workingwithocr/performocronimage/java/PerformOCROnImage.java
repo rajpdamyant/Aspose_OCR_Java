@@ -44,7 +44,7 @@ public class PerformOCROnImage
         ILanguage language = Language.load("english");
         ocr.getLanguages().addLanguage(language);
 
-        // Perform OCR and get extracted text
+        // Perform OCR and get extracted text.
         try {
             if (ocr.process()) {
                 System.out.println("\ranswer -> " + ocr.getText());
