@@ -51,12 +51,14 @@ public class PerformOCROnImage
                 BufferedWriter out = new BufferedWriter(new FileWriter(dataDir + "Output.txt"));
                 out.write(ocr.getText().toString());
                 out.close();
+                System.out.println("OCR performed on Input Image successfully.");
             }
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
-         System.out.println("OCR performed on Input Image successfully.");
+
     }
 }
 
